@@ -4,10 +4,11 @@
 from flask import Flask, request, render_template
 
 app=Flask(__name__)
-# Home page
+
 @app.route('/')
 def homepage():
     return "Welcome"
+# BMI calculation page
 @app.route('/calculate',methods=['POST','GET'])
 def calculate():
     if request.method=='GET':
