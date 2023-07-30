@@ -10,6 +10,7 @@ def homepage():
     return "Welcome"
 # BMI calculation page
 # for Navigation
+# for change
 @app.route('/calculate',methods=['POST','GET'])
 def calculate():
     if request.method=='GET':
