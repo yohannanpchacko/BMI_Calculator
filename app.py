@@ -1,5 +1,5 @@
 # BMI Calculator
-# 
+# for healthy life
 
 from flask import Flask, request, render_template
 
