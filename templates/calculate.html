@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <h1>Calculate BMI Page</h1>
+    </head>
+    <body>
+        <div class="calculate">
+            <form action="{{url_for('calculate')}}" method="post">
+                <input type="text" name="hight" placeholder="Hightincm" required="required"/>
+                <input type="text" name="weight" placeholder="Weightinkg" required="required"/>
+                <button type="submit" class="btn btn-primary btn-block btn-large">Calculate BMI</button>
+            </form>
+            <br>
+            </br>
+
+        </div>
+    </body>
+</html>
