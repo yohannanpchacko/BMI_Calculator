@@ -1,5 +1,4 @@
 # BMI Calculator
-# for healthy life
 
 from flask import Flask, request, render_template
 
@@ -9,8 +8,7 @@ app=Flask(__name__)
 def homepage():
     return "Welcome"
 # BMI calculation page
-# for Navigation
-# for change
+
 @app.route('/calculate',methods=['POST','GET'])
 def calculate():
     if request.method=='GET':
@@ -19,10 +17,7 @@ def calculate():
         hight=float(request.form['hight'])/100
         weight=float(request.form['weight'])
         BMI=weight/(hight*hight)
-        # conditions
-        # Health
-        # welness
-        # peace
+        
         if BMI >=35:
             return f"your BMI is {BMI} it is critical and consult a doctor"
         elif BMI >=30 and BMI<35:
