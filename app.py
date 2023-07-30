@@ -20,6 +20,7 @@ def calculate():
         BMI=weight/(hight*hight)
         # conditions
         # Health
+        # peace
         if BMI >=35:
             return f"your BMI is {BMI} it is critical and consult a doctor"
         elif BMI >=30 and BMI<35:
